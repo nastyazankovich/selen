@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-driver.get('https://suninjuly.github.io/math.html')
+driver.get('https://suninjuly.github.io/selects1.html')
 num1 = driver.find_element(By.ID, 'num1').text
 num2 = driver.find_element(By.ID, 'num2').text
 sum = int(num2) + int(num1)
